@@ -1,0 +1,18 @@
+div {width: 100px;height: 100px; 
+    background: red;    position :relative;
+    animation: ruch 2s infinite;}
+
+
+@keyframes ruch {
+    0%   {top: 0px;}
+    10%  {top: 400px;}
+    20%  {top: 50px}
+    30% {top: 400px;}
+    40%   {top: 100px;}
+    50%  {top: 400px;}
+    60%  {top: 150px}
+    70% {top: 400px;}
+    80%   {top: 200px;}
+    90%  {top: 400px;}
+    100% {top: 250px;}
+}
