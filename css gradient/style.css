@@ -1,0 +1,5 @@
+div{
+    background-image: radial-gradient(closest-corner at 110px 110px, yellow, red, blue);
+    font-size: 100px;
+    padding-left: 260px;
+}
