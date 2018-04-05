@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth;}
+  a, span {
+    display: block;
+    font-size: 30px;
+    font-family: Helvetica;
+    text-align: center;
+    text-decoration: none;
+    color: black;}
+  a:hover {
+    text-decoration: underline;}
+  span {
+    margin-top: 2500px;
+    margin-bottom: 250px;}
