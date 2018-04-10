@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Poller+One');
+body{
+  background-color: lightblue;
+  overflow: hidden;}
+div{position: relative;}
+.robot{position: relative; left: 200px;}
+.foot{
+  height: 40px; width: 40px; background: #ccc; border-radius: 40px; border: 15px solid #666; border-top: 15px solid white; left: 110px; top: -15px; z-index: -1;}
+.spin{animation: spin 2s linear infinite;}
+.right{
+  font-family: 'Poller One', verdana, arial, sans-serif;
+  font-weight: bold; font-size: 160px; color: #666; z-index: -1;
+  transform: scaleY(-1) rotate(20deg); position: relative;
+  top: -485px; left: 160px}
+.left{
+  font-family: 'Poller One', verdana, arial, sans-serif;
+  font-weight: bold; font-size: 160px; color: #666; z-index: -1;
+  transform: rotate(200deg); position: relative; top: -295px; left: -160px}
+.torso{
+  height: 0; width: 100px; border-top: 280px solid #bc6; border-left: 75px solid transparent; border-right: 75px solid transparent; border-radius: 20px 20px 100px 100px; left: 20px;}
+.brain{
+  height: 150px; width: 150px; border-radius: 60px 60px 10px 10px; border-bottom: 40px double #666; background: #cc5; display: grid; grid-template-columns: 1fr 1fr; left: 70px;}
+.eye{
+  background-color: #cc5; height: 35px; width: 35px; border-radius: 70px; animation: eyes 2s linear infinite, blink 1s infinite; background: radial-gradient(circle, white 15%, transparent 40%), #cc5; position: relative; top: 35px; left: 20px;}
+.beem{
+  display: none;  height: 305px; width: 305px;}
+.eye:hover{
+  background: radial-gradient(circle, red 15%, transparent 40%), #cc5;}
+.beep{
+  width: 5px; height: 0; border: 5px solid transparent; border-bottom: 60px solid #888; border-top: 10px solid #777; left: 140px}
+
+@keyframes spin{0%{transform: rotate(0deg)} 100%{transform: rotate(360deg)}}
+@keyframes eyes{50%{transform: scale(2,2)}}
+@keyframes blink{50%{background: radial-gradient(circle, red 15%, transparent 40%), #cc5;}}
