@@ -2,6 +2,8 @@
 
 live on Codepen:
 
++ <a href="https://codepen.io/TomaszPieta/pen/VQExqP" target="_blank">css before after</a>
++ <a href="https://codepen.io/TomaszPieta/pen/yvRLMo" target="_blank">css robot</a>
 + <a href="#">gradient</a>
 + <a href="#">css keyframe bounce</a>
 + <a href="#">css perspective</a>
