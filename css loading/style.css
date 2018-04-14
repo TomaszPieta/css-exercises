@@ -1,0 +1,9 @@
+.turn {
+    margin: 0 auto; height: 50px; width: 50px;
+    animation: turn 1s infinite linear;
+    border: 10px solid black;
+    border-left-color: transparent;
+    border-radius: 50%;}
+@keyframes turn {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}}
