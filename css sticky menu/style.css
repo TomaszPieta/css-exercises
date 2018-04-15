@@ -1,0 +1,35 @@
+$bg: yellow center fixed url(https://tinyurl.com/yb3x4sfz);
+
+body{
+  font-size: 30px;
+  background: green;}
+::-webkit-scrollbar { 
+    display: none;}
+header{
+  margin: 0 auto;
+  display: flex;
+  color: white;
+  background: $bg;
+  background-size: cover;
+  align-items: center;
+  justify-content: center;}
+.blur{
+  border: 2px solid rgba(255, 255, 255, .5);
+  background: $bg;
+  background-size: cover;
+  filter: blur(4px);
+  height: 200px;
+  width: 80%;
+  overflow: auto;
+}
+ul{
+  display: flex;
+  position: sticky;
+  top: 0px;
+  background: #000;
+  color: #fff;}
+li{
+  padding: 0px; margin: 20px;
+  list-style-type: none;}
+li:not(:last-child)::after{
+  content: ",";}
