@@ -2,6 +2,8 @@
 
 live on Codepen:
 
++ <a href="https://codepen.io/TomaszPieta/pen/BYJYXq" target="_blank">css keyframes</a>
++ <a href="https://codepen.io/TomaszPieta/pen/BYJYqP" target="_blank">css animation</a>
 + <a href="https://codepen.io/TomaszPieta/pen/MQVvqo" target="_blank">css sticky menu</a>
 + <a href="https://codepen.io/TomaszPieta/pen/wymJNG" target="_blank">css loading</a>
 + <a href="https://codepen.io/TomaszPieta/pen/paLrqP" target="_blank">css loader</a>
