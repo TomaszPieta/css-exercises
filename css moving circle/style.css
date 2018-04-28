@@ -1,0 +1,42 @@
+body, div {
+    background-color: green;
+  }
+  
+  #square {
+    background-color: yellow;
+    width: 320px;
+    height: 320px;
+    border: 1px solid black;
+  }
+  .inside {
+    position: relative;
+    display: inline-block;
+    top: -5px;
+    left: 60px;
+    width: 185px;
+    border: 1px solid black;
+    padding: 8px;
+  }
+  p::selection {
+    background: black;
+    color: white;
+  }
+  
+  #ball {
+    position: relative;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    animation: ball 4s linear infinite;
+  }
+  
+  @keyframes ball {
+    0% { top: 5px; left: 5px; }
+    25% { top: 5px; left: 265px; }
+    50% { top: 265px; left: 265px; }
+    75% { top: 265px; left: 5px; }
+    100% { top: 5px; left: 5px }
+  }
+  
+  
