@@ -1,0 +1,35 @@
+body{
+  background-color: silver;
+  margin-top: 30px;
+}
+.center{
+  margin: 0 auto;
+  width: 420px;
+}
+.btn {
+  padding: 2rem 4rem;
+  border: 2px solid var(--color, black);
+  background: transparent;
+  font-size: 2em;
+  border-radius: 20px;
+}
+.btn:hover {
+  cursor: pointer;
+  background: var(--color, black);
+  color: white;
+}
+.btn.red {
+  --color: red
+}
+.btn.yellow {
+  --color: yellow
+}
+.btn.green {
+  --color: green
+}
+.btn.orange {
+  --color: orange
+}
+.btn.teal {
+  --color: teal
+}
