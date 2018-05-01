@@ -1,0 +1,16 @@
+*{box-sizing: border-box;}
+.grid{  display: grid; grid-template-columns: 150px 300px 300px 100px;
+ 
+  grid-template-areas: 'two one nine seven' 'two three three seven' 'four four five seven' 'ten six six seven' 'ten eight eleven seven'}
+
+.box{  background-color: green;
+  padding: 10px;  margin: 10px;
+  border: 3px solid black;  text-align: center;
+  font-size: 20px;  font-weight: bold;}
+
+.one{grid-area: one} .two{grid-area: two}
+.three{grid-area: three} .four{grid-area: four}
+.five{grid-area: five} .six{grid-area: six}
+.seven{grid-area: seven} .eight{grid-area: eight}
+.nine{grid-area: nine} .ten{grid-area: ten}
+.eleven{grid-area: eleven}
