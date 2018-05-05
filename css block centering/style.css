@@ -1,0 +1,13 @@
+body{
+    background-color: green;
+    margin: 0 auto;
+  }
+  #class{
+    position: absolute;
+    background-color: yellow;
+    height: 50vh;
+    width: 50vw;
+    top: 50vh; left: 50vw;
+    margin-top: -25vh;
+    margin-left: -25vw;
+  }
