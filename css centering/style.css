@@ -1,0 +1,51 @@
+.kontener {
+  background: yellow;
+  height: 200px;
+  margin-bottom: 20px;
+}
+.wysrodkowany-element {
+  background: red;
+}
+
+.metoda1-kontener {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.metoda2-kontener {
+  position: relative;
+}
+.metoda2-element {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.metoda3-kontener{
+  display: table;
+  width: 100%;
+}
+.metoda3-komorka {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.metoda3-element {
+  display: inline-block;
+}
+
+.metoda4-kontener {
+  position: relative;
+}
+.metoda4-element {
+  height: 20px;
+  width: 100px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
