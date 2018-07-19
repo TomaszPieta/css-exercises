@@ -1,0 +1,76 @@
+<link rel="stylesheet" href="style.css" />
+
+
+   <!-- Nav -->
+   <header>
+    <nav>
+      <div class="container">
+        <div class="logo">MY NEW LOGO</div>
+          <ul>
+            <li><a href="#">Link1</a></li>
+            <li><a href="#">Link2</a></li>
+            <li><a href="#">Link3</a></li>
+          </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!--Hero  -->
+  <header>
+    <div class="hero container ">
+      <h1>My header</h1>
+    </div>
+  </header>
+
+  <!-- --Gallery-- -->
+  <section class="gallery">
+    <div class="container">
+      <div class="photo">
+        <img src="https://images.pexels.com/photos/238367/pexels-photo-238367.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+      </div>
+      <div class="photo">
+        <img src="https://images.pexels.com/photos/275637/pexels-photo-275637.jpeg?w=940&h=650&auto=compress&cs=tinysrgb">
+      </div>
+      <div class="photo">
+        <img src="https://images.pexels.com/photos/5325/boats-port-sun-harbor.jpg?w=940&h=650&auto=compress&cs=tinysrgb">
+      </div>
+  </section>
+
+  <!-- Map1 -->
+  <section class="map1">
+      <div class="container">
+          <img src="https://maps.googleapis.com/maps/api/staticmap?center=Brooklyn+Bridge,New+York,NY&scale=2&zoom=13&size=600x300&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:red%7Clabel:Company%7C40.718217,-73.998284&key=AIzaSyAM25w4QrwIXC7VoKjllL31o4UjhP7lYFc">
+      </div>
+  </section>
+
+  <!-- Map2 -->
+  <section>
+    <div class="map">
+      <div class="container">
+        <div id="map"></div>
+          <script>
+            function initMap() {
+              var uluru = {lat: -25.363, lng: 131.044};
+              var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+              });
+              var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+              });
+            }
+          </script>
+          <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAm-gLDrm0mBlZSzUfqX1FjC26ynubx1Yc&callback=initMap">
+          </script>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="container">
+      <p>Copyright 2018</p>
+    </div>
+  </footer>
