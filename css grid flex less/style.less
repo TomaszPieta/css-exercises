@@ -1,0 +1,71 @@
+@width: 150px;
+@url: "https://picsum.photos/100";
+
+.radius(@radius){
+  border-radius: @radius;
+}
+.padding{
+  padding: 20px;
+}
+.wbb {
+  color: white;
+   border: 2px solid black;
+   background-color: blue;
+}
+
+body {
+  margin: 0 auto;  
+}
+.app {
+  display: grid;
+  grid-gap: 20px; 
+  grid-template-columns: repeat(auto-fit, minmax(@width, 1fr));
+  background-color: yellow;
+  .padding;
+}
+.box {
+  background: blue url("@{url}") no-repeat center;
+  width: (@width - 50px)*1.5;
+  height: (@width - 50px)*1.5;
+  .radius(15px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  border: 2px solid black;
+  &:hover {
+    color: black;
+    border: 2px solid white;
+    background-color: green;
+  }
+}
+.box:nth-child(even) {
+  &:extend(.box);
+  background-color: green;
+  border: 2px solid white;
+  &:hover {
+    .wbb;
+  }
+}
+span {
+  background-color: blue;
+  width: @width - 110px;
+  height: @width - 110px;
+  text-align: center;
+  .radius(50%);
+  border: 2px solid black;
+  &:hover {
+    color: black;
+    border: 2px solid white;
+    background-color: red;
+  }
+}
+.box:nth-child(odd) span {
+  &:extend(span);
+  background-color: red;
+  border: 2px solid white;
+  &:hover {
+    .wbb
+  }
+}
