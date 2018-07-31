@@ -1,0 +1,27 @@
+body {
+  text-align: center;
+  text-transform: uppercase;
+  background-color: yellow;
+  font-family: sans-serif;
+}
+.board {
+  margin: 40px auto;
+/*   overflow: hidden; */
+  font-size: 0;
+/*   display: flex;
+  flex-wrap: wrap; */
+  width: 400px;
+/*   height: 400px; */
+  border: 5px solid #000;
+}
+.board div {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.board div:nth-child(odd) {
+  background-color: white;
+}
+.board div:nth-child(even) {
+  background-color: black;
+}
