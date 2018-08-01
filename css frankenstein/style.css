@@ -1,0 +1,115 @@
+.container, .hair, .head, .eye, .scar, .mouth, .bolt, .mask {
+  position: absolute;
+}
+body {
+  background-color: #777;
+}
+.container {
+  margin: auto;
+  top: 0; bottom: 0; right: 0; left: 0;
+  width: 200px; height: 200px;
+  background: transparent;
+}
+.hair {
+  z-index: 50;
+  div {
+    position: absolute;
+    width: 20px; height: 20px;
+    background: #6ABF6E;
+    border-radius: 50%;
+    left: 92px; top: 38px;
+  }
+  div:nth-child(2) {
+    left: 166px;
+  }
+  div:nth-child(3) {
+    left: 218px;
+  }
+}
+.head {
+  height: 250px; width: 244px;
+  background: #6ABF6E; left: 32px;
+  border-radius: 20px 20px 100px 100px;
+  box-shadow: inset 0 50px 0 0 #333333;
+}
+.scar {
+  left: 124px; width: 135px;
+  height: 10px; top: 76px;
+  background: #333333;
+  border-radius: 8px 8px 8px 8px;
+  div {
+    position: absolute;
+    background: #333333;
+    border-radius: 6px 6px 6px 6px;
+    width: 10px; height: 28px; top: -9px;
+  }
+  div:nth-child(1) {
+    left: 20px;
+  }
+  div:nth-child(2) {
+    left: 60px;
+  }
+  div:nth-child(3) {
+    left: 104px;
+  }
+}
+@mixin eye {
+  border-radius: 50%;
+  width: 30px; height: 30px;  
+  border: 8px solid #40423E;
+  background: #999;
+}
+.eye {
+  @include eye;
+  left: 53px; top: 116px;
+  &:after {
+    position: absolute;
+    content: '';
+    @include eye;
+    top: -8px; left: 70px;
+  }
+}
+.mouth {
+  width: 84px; height: 20px;
+  background: #333333;
+  top: 182px; left: 74px;
+  border-radius: 14px 14px 14px 14px;
+}
+.bolt {
+  z-index: -1;
+  div {
+    position: absolute;
+  }
+  div:nth-child(1) {
+    z-index: -10;
+    top: 177px; left: -20px;
+    width: 18px; height: 36px;
+    background: #B7CADB;
+  }
+  div:nth-child(2) {
+    z-index: -20;
+    top: 186px; left: -18px;
+    background: #90A7BE;
+    height: 18px; width: 36px;
+  }
+  div:nth-child(3) {
+    z-index: -30;
+    top: 186px; left: 195px;
+    background: #90A7BE;
+    width: 56px; height: 18px;
+  }
+  div:nth-child(4) {
+    z-index: -25;
+    top: 177px; left: 246px;
+    width: 18px; height: 36px;
+    background: #B7CADB;
+  }
+}
+.mask {
+  left: 60px;
+  border-radius: 50px 20px 100px 50px;
+  background: #FFFFFF;
+  width: 184px; height: 250px;
+  z-index: 50;
+  opacity: 0.2;
+}
