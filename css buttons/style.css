@@ -1,0 +1,19 @@
+body {
+  text-align: center;
+  background-color: #03f48f;
+}
+a {
+  display: inline-block;
+  background-color: #111;
+  border: 2px solid #444;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: gold;
+  transition: 1s;  
+}
+a:hover {
+  color: white;
+  border-color: #555;
+}
