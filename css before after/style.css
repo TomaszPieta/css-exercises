@@ -1,18 +1,32 @@
 .elem{
-  width: 400px; height: 400px;
-  position: relative; margin: 30px;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: 30px;
   border: 5px solid green;
-  background: silver; padding: 10px;}
+  background: silver;
+  padding: 10px;
+}
 .elem::after{
-  content: '';  position: absolute;
-  top: -15px; left: -15px; right: -15px; bottom: -15px;
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
   background: yellow;
   border: 5px solid blue;
-  z-index: -1;}
+  z-index: -1;
+}
 .elem::before{
-  content: '';  position: absolute;
-  top: -25px; left: -25px; right: -25px; bottom: -25px;
+  content: '';
+  position: absolute;
+  top: -25px;
+  left: -25px;
+  right: -25px;
+  bottom: -25px;
   background: red;
   box-shadow: 20px 20px 15px violet;
   border: 5px solid black;
-  z-index: -1;}
+  z-index: -1;
+}
